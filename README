@@ -1,0 +1,10 @@
+File Descriptions
+
+courses.txt: List of courses at UMD from umd.io endpoint http://api.umd.io/v0/courses/list.
+
+makeTree.py: Python script that parses JSON formatted data in courses.txt.  Iterates through the full list of courses and gets further information from umd.io on each individual course.  Checks each course for listed pre-requisites in the 'prereqs' field and pre-requisites described in the 'description' field.  Writes each course and its pre-requisites to a separate file.
+
+getCourseInfo.sh: Shell script that gets data from umd.io for a specific course ID passed as the parameter.
+
+treeFile.txt: File containing each course and its listed pre-requisites.  Course tree can be reconstructed from this adjacency list.
+
